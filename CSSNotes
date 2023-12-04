@@ -1,0 +1,223 @@
+CSS
+css stands for cascading style-sheet.
+CSS describes how html tags are to be display on screen/web browser.
+CSS was introduced by Hakon Wium in 1994.
+Types of CSS--------------
+⦁	Internal CSS (use of Style tag)
+⦁	External CSS
+⦁	Inline CSS
+Internal CSS-------
+Syntax :---
+<style>
+selector{
+property:value;
+property:value;
+property:value;property:value;property:value;
+}
+</style>
+Selector -- Selector is used to select HTML tags to apply CSS.
+Types Of  Selector :-----
+1.	Tag/Element Selector
+2.	Id Selector
+3.	Class Selector
+4.	Compound Selector
+5.	Parent Child Selector
+6.	nth-Child Selector
+7.	first-Child Selector
+8.	last-Chlid Selector
+9.	nth-Child (even) Selector
+10.	nth-Child (odd) Selector
+11.	Attribute Selector
+12.	Group Selector
+13.	Universal Selector
+14.	After Selector
+15.	Before Selector
+16.	Pseudo Selector
+17.	Direct Child Selector
+18.	Adjacent Siblings Selector
+And Many More.........
+border:width style color;--
+style----
+solid,dotted,double,dashed,groove,wavy and many more
+text-shadow : horizontal vertical blur color;
+box-shadow : horizontal vertical blur spread color side;
+(spread color and side value is optional)
+line-height
+word-spacing
+letter-spacing
+Inline CSS--
+<tagname style="property:value;property:value;"></tagname>
+Priority of CSS----
+The priority of Inline CSS is higher priority as compare to External CSS and Internal CSS.
+The priority of internalCSS is higher pripority as compare to External CSS.
+Transition property :--
+transition: property time second,property  time in second;
+transition:all time in second;
+background:-----
+linear-gradient()
+repeating-linear-gradient()
+radial-gradient()
+repeating-radial-gradient()
+conic-gradient()
+repeating-conic-gradient()
+-------------------------------------------------------------------------------------------------------------------
+Margin-- define the outer space
+Padding--define the inner space --
+padding:value ; top bottom left right
+padding:vertical horizontal;
+padding:25px 50px;
+padding:10px 20px 30px;
+(padding-top:10px; padding-left and right:20px; padding-bottom:30px;)
+padding:10px 20px 30px 40px;
+(padding-top:10px;  padding-right:20px;  padding-bottom:30px; padding-left:40px;)
+-------------------------------------------------------------------------------------------------
+box-sizing:content-box;
+box-sizing:border-box;    applicable for padding and border
+-------------------------------------------------------------------------------------------------
+Position:
+static(it is a bydefault value and top bottom are not worked in static property)
+ absolute-- it releases the own space
+ relative 
+fixed 
+sticky
+----------------------------------------------
+we can define only one ---
+top || bottom
+left || right
+--------------------------------------------------
+:root{
+--variablename:value;
+--variablename1:value1;
+--variablename2:value2;
+}
+:root{
+--c:yellow;
+}
+==============
+color:var(--variablename);
+color:var(--c);
+==========================================================
+overflow---
+overflow x;
+overflow y;
+auto scroll hidden visible
+================================================================
+Table--
+⦁	<tr></tr>
+⦁	 <caption></caption>
+⦁	  <th></th> 
+⦁	   <td></td> 
+⦁	   <thead></thead>
+⦁	   <tbody></tbody>      
+⦁	 <tfoot></tfoot>
+⦁	colgroup  col
+===============
+border--
+⦁	span
+⦁	colspan
+⦁	roswpan
+⦁	cellpadding
+⦁	cellspacing
+Animation - timing - function :==================================
+linear 
+====================================================================
+transform -- rotate   skew   skewX   skewY translateX  translateY   scale scaleX   scaleY
+rotateX
+rotateY
+rotateZ || rotate
+======================================================================
+transform-style:flat||preserve
+==============================================
+background-clip-------
+padding-box;
+border-box  --(bydefault value is border-box)
+content-box
+text
+==================================================================================: :placeholder
+: :first-letter
+: :first line
+: :selection
+: :after --> is used to add content after selected html element
+: :before--> is used to add content before selected html element
+content:'      ';--->
+we are using content tag with after and before 
+==================================================================================
+: link
+: active
+: visited
+: focus
+These are apply on the anchor tag <a></a>.
+==================================================================================
+Pattern Attribute :  to check or  verify the inputed value format we are using the pattern attribute.
+Pattern uses regular expression to verify inputed value.
+regular expression built by meta character and quantifires.
+Meta Characters :---
+[a to z] ==> allowed char --> a-z
+[A to Z]==> allowed char -->A -Z
+[0 -9] ==> allowed char -->0-9
+[a-z,A-Z]
+[a-z,A-Z,0-9]
+[a-h] --> allowed char from a to h.
+[A-H] --> allowed char from A to H.
+[0-5] --> allowed char from 0 to 5.
+[a,d,f,g] ==> a,d,f,g
+[^a,d,f,g]==> excluding a,d,f,g
+/d ==> digit (it will be taken all the number)
+/D ==>none-digit (it will be taken all the character excluding the number)
+/w ==>word[a-z,A-Z,0-9]
+/W ==> none-word excluding[a-z,A-Z,0-9,_]
+[@,#,$,&]
+Quantifiers---
+{number}
+{min,max}
+{min,}
+{5} exactly 5 character are allowed
+{2,7} minimum 2 character and maximum 7 character
+{3,} minimum will be 3 and maximum character can be anything
+==================================================================================Universal Selector (*)-- It will be select all the tag of the body
+% -- it will taken the value of the current parent
+px - it wil be fix the size 
+in - it will be also taken the fix size
+em-- it will be taken the just half value of the fontsize of the current parent
+rem(relative em) -- it will be taken the value of the root element of html and the bydefault value of the html is 16px.
+vh
+vw
+vmin
+vmax
+-------------------------------------------------------------------------------------------------------------------
+Display----
+none
+block
+inline
+inline-block
+list-item
+
+Flex box
+flex
+grid
+flex-direction -->column, row, column-reverse,row-reverse
+flex-wrap -->wrap, nowrap, wrap-reverse
+justify-content -->flex-start,flex-end,center,space-around,space-between
+flex-flow --> it is shorthand of flex-direction and flex-wrap
+flex-flow:wrap row;
+align-items --> center flex-start, flex-end,stretch
+for horizontal item -- justify-content
+for vertical item -- align-items
+--------------------------------------------------------------------
+::-webkit-scrollbar
+::-webkit-scrollbar-track
+::-webkit-scrollbar-thumb
+::-webkit-scrollbar-corner
+
+
+
+
+
+
+
+
+
+
+
+
+
